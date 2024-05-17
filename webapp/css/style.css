@@ -1,0 +1,127 @@
+.welcomeImage{
+	width:100%;
+	height:500px;
+}
+
+.ButtonSegment{
+	width:100px;
+	display:flex;
+	justify-content:"center";
+}
+
+
+.Header{
+	display:flex;
+margin-left: 50px;
+}
+.LogoIcon{
+  color:blue;
+  font-size:50px;
+}
+
+.newTextHeader{
+	color:Blue;
+	font-size:30px;
+}
+
+.LifeText{
+	color:Blue;
+	font-weight:200px;
+  	font-size:50px;
+}
+
+.HeaderTab{
+ display:flex;
+ flex-direction:row;
+ justify-left:0px;
+} 
+
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family:poppins;
+}
+
+body{
+  background-color:#FFFACD;
+}
+div.Container{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:20px;
+display:flex;
+flex-direction:row;
+align-items:center;
+background-color:white;
+padding:30px;
+height:300px;
+margin-top:220px;
+}
+
+div.Container div.myform{
+  width: 270px;
+  margin-right: 30px;
+}
+
+div.Container div.myform h2{
+  color: #1c1c1e;
+  margin-bottom: 20px;
+}
+
+div.Container div.myform input{
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 0;
+  font-size: 14px;
+}
+div.Container div.myform button{
+  color: blue;
+  background-color:#FFF8DC;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px 12px;
+  font-weight: 500;
+}
+div.Container div.image img{
+  width: 300px;
+}
+
+
+.glassOne{
+    background-color: transparent;
+    border: solid white 3px;
+    backdrop-filter: blur(14px);
+     border-radius: 20%;
+   
+}
+
+.loginTopicTest{
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px rgb(4, 0, 250);
+        display: flex ;   
+       justify-content: center ; 
+
+}
+
+.box{
+    width: 50px;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+
+
+

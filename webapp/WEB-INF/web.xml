@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+
+	<!-- Link Index Page -->
+	<servlet>
+		<servlet-name>LINKINDEx</servlet-name>
+		<servlet-class>com.model.LinnkIndexPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LINKINDEx</servlet-name>
+		<url-pattern>/INDEX</url-pattern>
+	</servlet-mapping>
+	
+	
+
+	<!-- Link Admin Login Page -->
+	<servlet>
+		<servlet-name>LinkAdminLogin</servlet-name>
+		<servlet-class>com.model.LinkAdminLoginPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkAdminLogin</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+
+	<!-- Link Admin Add New Admin Page -->
+	<servlet>
+		<servlet-name>LinkNewAdminPageLogin</servlet-name>
+		<servlet-class>com.model.LinkNewAdminPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkNewAdminPageLogin</servlet-name>
+		<url-pattern>/LAA</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<!-- Link Patient Login Page -->
+	<servlet>
+		<servlet-name>LinkPatientLogin</servlet-name>
+		<servlet-class>com.model.LinkPatientLoginPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkPatientLogin</servlet-name>
+		<url-pattern>/Plog</url-pattern>
+	</servlet-mapping>
+
+	<!-- Link Patient SignUp Page -->
+	<servlet>
+		<servlet-name>LinkPatientRegistration</servlet-name>
+		<servlet-class>com.model.LinkPatientRegisterPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkPatientRegistration</servlet-name>
+		<url-pattern>/Preg</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<!-- Link Doctor Login Page -->
+	<servlet>
+		<servlet-name>LinkDoctorLogin</servlet-name>
+		<servlet-class>com.model.LinkDoctorLoginPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkDoctorLogin</servlet-name>
+		<url-pattern>/Dlog</url-pattern>
+	</servlet-mapping>
+
+	<!-- Link Doctor Register Page -->
+	<servlet>
+		<servlet-name>LinkDoctorRegisterPage</servlet-name>
+		<servlet-class>com.model.LinkDoctorRegisgterPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkDoctorRegisterPage</servlet-name>
+		<url-pattern>/DCREATE</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Link Doctor MyAppoinment Page -->
+	<servlet>
+		<servlet-name>LinkDoctorAppoinmentPage</servlet-name>
+		<servlet-class>com.model.LinkDOctorMyAppoinmentsPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkDoctorAppoinmentPage</servlet-name>
+		<url-pattern>/DA</url-pattern>
+	</servlet-mapping>
+
+	<!-- Link Doctor Prescription Page -->
+	<servlet>
+		<servlet-name>LinkDoctorPrescriptionPage</servlet-name>
+		<servlet-class>com.model.LinkDOctorPrescriptionPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkDoctorPrescriptionPage</servlet-name>
+		<url-pattern>/DPF</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<!--Link Admin Approve Appoinment -->
+	<servlet>
+		<servlet-name>LinkAdminApproveAppoinment</servlet-name>
+		<servlet-class>com.model.LinkAdminApproveAppoinment</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkAdminApproveAppoinment</servlet-name>
+		<url-pattern>/DAAAlog</url-pattern>
+	</servlet-mapping>
+
+	<!--Link Admin Manage Doctor -->
+	<servlet>
+		<servlet-name>LinkAdminManageDoctorPage</servlet-name>
+		<servlet-class>com.model.LinkAdminManageDoctorPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkAdminManageDoctorPage</servlet-name>
+		<url-pattern>/AMD</url-pattern>
+	</servlet-mapping>
+
+	<!--Link Patient Appoinment Request Page -->
+	<servlet>
+		<servlet-name>LinkPatientAppoinmentPage</servlet-name>
+		<servlet-class>com.model.LinkPatientAppoinmentPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkPatientAppoinmentPage</servlet-name>
+		<url-pattern>/PAR</url-pattern>
+	</servlet-mapping>
+
+	<!--Link Patient Appoinment Status Page -->
+	<servlet>
+		<servlet-name>LinkPatientAppoinmentStatusPage</servlet-name>
+		<servlet-class>com.model.LinkPatientAppoinmentStatusPage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkPatientAppoinmentStatusPage</servlet-name>
+		<url-pattern>/PARS</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Link Patient Update Appoinment Request Page -->
+	<servlet>
+		<servlet-name>LinkPatientUpdateAppoinmentPage</servlet-name>
+		<servlet-class>com.model.LinkPatientUpdateAppoinmentRequest</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LinkPatientUpdateAppoinmentPage</servlet-name>
+		<url-pattern>/LPUA</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<!-- Admin Login Process Page -->
+	<servlet>
+		<servlet-name>AdminLoginProcess</servlet-name>
+		<servlet-class>com.servlet.AdminLoginProcessServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLoginProcess</servlet-name>
+		<url-pattern>/ALoginProcess</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Admin Add new Admin Process Page -->
+
+
+	<servlet>
+		<servlet-name>AdminAddNewAdmin</servlet-name>
+		<servlet-class>com.servlet.AdminAddNewAdminProcessServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminAddNewAdmin</servlet-name>
+		<url-pattern>/AANA</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- Admin Appoinment Delete Process Page -->
+	<servlet>
+		<servlet-name>AdminAppoinmentDeleteProcess</servlet-name>
+		<servlet-class>com.servlet.AdminAppoinmentDeleteProcessServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminAppoinmentDeleteProcess</servlet-name>
+		<url-pattern>/AAD</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Admin Appoinment Update Status Process Page -->
+	<servlet>
+		<servlet-name>AdminAppoinmentUpdateStatusProcess</servlet-name>
+		<servlet-class>com.servlet.AdminAppoinmentUpdateStatusProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminAppoinmentUpdateStatusProcess</servlet-name>
+		<url-pattern>/AAUS</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Admin Delete Doctor Process Page -->
+	<servlet>
+		<servlet-name>AdminDeleteDoctorProcess</servlet-name>
+		<servlet-class>com.servlet.AdminDeleteDoctorProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminDeleteDoctorProcess</servlet-name>
+		<url-pattern>/ADDP</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- Patient Login Process Page -->
+	<servlet>
+		<servlet-name>PatientLoginProcess</servlet-name>
+		<servlet-class>com.servlet.PatientLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientLoginProcess</servlet-name>
+		<url-pattern>/PLogin</url-pattern>
+	</servlet-mapping>
+
+	<!-- Patient SignUp Process -->
+	<servlet>
+		<servlet-name>PatientRegistrationProcess</servlet-name>
+		<servlet-class>com.servlet.PatientRegisterProcessServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientRegistrationProcess</servlet-name>
+		<url-pattern>/PCreate</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Patient Request Appoinment Process -->
+	<servlet>
+		<servlet-name>PatientRequestAppoinmentProcess</servlet-name>
+		<servlet-class>com.servlet.PatientRequestAppoinmentProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientRequestAppoinmentProcess</servlet-name>
+		<url-pattern>/PRACreate</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Patient Appoinment Delete Process -->
+	<servlet>
+		<servlet-name>PatientAppoinmentDeleteProcess</servlet-name>
+		<servlet-class>com.servlet.PatientDeleteAppoinmentProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientAppoinmentDeleteProcess</servlet-name>
+		<url-pattern>/PAD</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- Patient Update Appoinment Process -->
+	<servlet>
+		<servlet-name>PatientUpdateAppoinmentProcess</servlet-name>
+		<servlet-class>com.servlet.PatientUpdateAppoinmentProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientUpdateAppoinmentProcess</servlet-name>
+		<url-pattern>/PRAUpdate</url-pattern>
+	</servlet-mapping>
+
+	<!-- Patient Update Appoinment Process -->
+	<servlet>
+		<servlet-name>PatientUpdateProfileInfo</servlet-name>
+		<servlet-class>com.servlet.PatientUpdateProfileInfoProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientUpdateProfileInfo</servlet-name>
+		<url-pattern>/PUP</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<!--Delete Patient Profile Process -->
+	<servlet>
+		<servlet-name>DeletePatientProfileProcess</servlet-name>
+		<servlet-class>com.servlet.PatientDeleteProfileProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletePatientProfileProcess</servlet-name>
+		<url-pattern>/DP</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Doctor Login Process Page -->
+	<servlet>
+		<servlet-name>DoctorLoginProcess</servlet-name>
+		<servlet-class>com.servlet.DoctorLoginProcessServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DoctorLoginProcess</servlet-name>
+		<url-pattern>/DLogin</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Doctor Register Process -->
+	<servlet>
+		<servlet-name>DoctorRegisterProcess</servlet-name>
+		<servlet-class>com.servlet.DoctorRegisterProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DoctorRegisterProcess</servlet-name>
+		<url-pattern>/Dreg</url-pattern>
+	</servlet-mapping>
+
+	<!-- Doctor Update Profile Process -->
+	<servlet>
+		<servlet-name>DoctorUpdateProfile</servlet-name>
+		<servlet-class>com.servlet.DoctorUpdateProfileProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DoctorUpdateProfile</servlet-name>
+		<url-pattern>/DUP</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Doctor Delete Profile Process -->
+	<servlet>
+		<servlet-name>DoctorDeleteProfileProcess</servlet-name>
+		<servlet-class>com.servlet.DoctorDeleteProfileProsess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DoctorDeleteProfileProcess</servlet-name>
+		<url-pattern>/DD</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Doctor Create Prescription Process -->
+	<servlet>
+		<servlet-name>DoctorCreatePrescriptionProcess</servlet-name>
+		<servlet-class>com.servlet.DoctorCreatePrescriptionProcess</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DoctorCreatePrescriptionProcess</servlet-name>
+		<url-pattern>/DCPP</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</web-app>
